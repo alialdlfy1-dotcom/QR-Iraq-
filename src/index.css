@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0066FF;
+  --color-secondary: #4F46E5;
+}
+
+@layer base {
+  html {
+    @apply transition-colors duration-300;
+  }
+  
+  body {
+    @apply antialiased min-h-screen overflow-x-hidden font-bold text-slate-950 bg-white dark:bg-slate-950 dark:text-white;
+  }
+}
+
+.glass-card {
+  @apply bg-white/90 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200 dark:border-white/10 shadow-xl;
+}
+
+[dir="rtl"] {
+  font-family: 'Cairo', sans-serif;
+}
+
